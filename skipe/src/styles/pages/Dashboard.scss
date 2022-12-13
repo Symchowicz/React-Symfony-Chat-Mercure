@@ -1,0 +1,78 @@
+.dashboard-container {
+    display: flex;
+}
+
+.page-dashboard {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: 100vh;
+    padding-bottom: 61px;
+    width: 100%;
+
+    .conv {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        > div {
+            padding-bottom: 20px;
+
+            span {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #F1F4F9;
+            }
+        }
+
+        div.me {
+            display: flex;
+            justify-content: end;
+
+            span {
+                background-color: #DBF4FE;
+            }
+        }
+    }
+
+    .bottom-control {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        padding: 30px 10px;
+        border-top: 1px solid rgb(226, 226, 226);
+        align-items: center;
+        background-color: #fff;
+
+        input {
+            border: none;
+            width: 100%;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        button {
+            height: 40px;
+            width: 40px;
+            background-color: #077DB5;
+            border: none;
+            border-radius: 100%;
+
+            &:hover {
+                background-color: #02547a;
+                cursor: pointer;
+            }
+
+            svg {
+                height: 20px;
+                width: 20px;
+                color: #fff;
+                transform: rotateZ(-25deg);
+            }
+        }
+    }
+}
